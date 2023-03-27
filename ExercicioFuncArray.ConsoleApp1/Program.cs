@@ -40,9 +40,19 @@ namespace ExercicioFuncArray.ConsoleApp1
 
         static int PegarValorMedio()
         {
-          valorMedio = (numeros.Length - 1) / 2;
-          valorMedio = numeros[valorMedio];
-          return valorMedio;
+            //valorMedio = (numeros.Length - 1) / 2;
+            //valorMedio = numeros[valorMedio];
+            //return valorMedio;
+            int valorTotal = 0;
+
+            for (int i = 0; i < numeros.Length; i++)
+            {
+                valorTotal = valorTotal + numeros[i];
+            }
+
+            valorMedio = valorTotal / numeros.Length ;
+
+            return valorMedio;
         }
 
         static int[] PegarTresMaiores()
